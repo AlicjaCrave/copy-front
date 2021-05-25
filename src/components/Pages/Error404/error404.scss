@@ -1,0 +1,43 @@
+
+@use '/src/styles/_vars.scss';
+
+.page404-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.titre404 {
+  margin-top:0.3em;
+  font-size: 20em;
+  color: black;
+}
+
+.logo404 {
+  width: 400px;
+}
+
+.text-404 {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 2.3em;
+}
+
+.retourHomepage404 {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  color: vars.$darkColor;
+  font-family: vars.$mainFont;
+  font-size: 0.8em;
+}
+
+.retourHomepage404:hover {
+  text-decoration: none;
+  background-image: linear-gradient(#FF512F 0%, #F09819  51%, #FF512F  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

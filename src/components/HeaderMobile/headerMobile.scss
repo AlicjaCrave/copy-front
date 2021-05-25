@@ -1,0 +1,72 @@
+@use '/src/styles/_vars.scss';
+
+.headerMobileContent{
+  position: fixed;
+  top: 0;
+  max-width: 100%;
+  padding: 0.5em;
+  font-family: vars.$mainFont;
+  font-size: 0.8em;
+  background-color: vars.$darkColor;
+  color: white;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+
+  .headerLogo {
+    
+  }
+
+  .headerLogoContent{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.2em;
+    text-decoration: none;
+  }
+
+  .logoPinguin{
+    max-width: 20%;
+  }
+
+  .headerLogoTitle {
+  }
+
+  .headerInscriptionConnexion-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+ 
+  
+}
+.headerButtonMobile{
+  padding: 15px;
+  color: vars.$darkColor;
+}
+.headerButtonMobile:hover {
+  text-decoration: none;
+  background-image: linear-gradient(#FF512F 0%, #F09819  51%, #FF512F  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+
+.headerButtoninscription {
+  padding: 15px;
+  color: vars.$darkColor;
+}
+
+.headerButtoninscription:hover {
+  text-decoration: none;
+  background-image: linear-gradient(#FF512F 0%, #F09819  51%, #FF512F  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+
+.headerButtonMobileDeco {
+  padding: 15px;
+  border: none;
+  color: vars.$darkColor;
+  background: transparent;
+}

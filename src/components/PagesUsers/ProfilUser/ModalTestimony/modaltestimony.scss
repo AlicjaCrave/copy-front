@@ -1,0 +1,50 @@
+@use '/src/styles/_vars.scss';
+.formArchive{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 15em;
+}
+
+
+  .btn-grad-temoignageUser {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+  .btn-grad-temoignageUser {
+    font-family: vars.$mainFont;
+    padding: 15px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    border: none;
+    float: right;
+  }
+
+  .btn-grad-temoignageUser:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .cancel-temoignage {
+    font-family: vars.$mainFont;
+    color: vars.$darkColor;
+    border: none;
+    background: transparent;
+    font-size: 0.8em;
+  }
+
+  .cancel-temoignage:hover {
+    text-decoration: none;
+    background-image: linear-gradient(#FF512F 0%, #F09819  51%, #FF512F  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .textAreaArchive{
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+  }

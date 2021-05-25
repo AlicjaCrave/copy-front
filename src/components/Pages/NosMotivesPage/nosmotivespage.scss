@@ -1,0 +1,174 @@
+@use '/src/styles/_vars.scss';
+.nosMotivesPage{
+  margin-top: 4.4em;
+  margin-bottom: 4.4em;
+
+  .banner-content {
+    text-align: center;
+    color: vars.$mainColor;
+  
+    .blocPage-background {
+      background-image: linear-gradient( 109.7deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+      height: 250px;
+      margin-top: 4.4em;
+      max-width: 100%;
+    }
+  
+    .banner-title {
+      font-family: vars.$mainFont;
+      padding-top: 2em;
+    }
+  
+    .banner-description {
+      font-family: vars.$secondFont;
+      padding: 20px;
+    }
+
+    .citationquote {
+      position: relative;
+      bottom: 35px;
+      left: 200px;
+      font-size: 0.7em;
+    }
+  }
+  
+  .motivationDescriptionColor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dotAndDescription{
+    border-radius: 10px;
+    margin: 20px 10px 10px 20px;
+    padding: 0.5em;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;   
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    border-radius: 8px;
+  }
+  .dotAndDescription:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  .motivationDescription{
+    padding-top: 7px;
+    padding-left: 50px;
+    width: 200px;
+  }
+  .nosMotives{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3em;
+  }
+  .cardNosMotives{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    max-height: 215px;  
+    border-radius: 4%;
+    padding: 20px;
+    margin: 2em;
+    background-color: rgb(226, 226, 226);
+  }
+  .logoNosMotives{
+    border-radius: 50%;
+    background-image: linear-gradient( 10deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+    margin: 10px;
+    min-width: 10em;
+    max-width: 10em;
+    min-height: 10em;
+    max-height: 10em;
+  }
+  .pseudoNosMotives{
+    position: relative;
+    top: -195px;
+    text-align: center;
+    font-family: vars.$secondFont;
+  }
+  .dotMotivation{
+    position: relative;
+    top: -80px;
+    left: 50px;
+    transform: rotate(50deg);
+   
+  }
+  .smoking{
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: rgba(187, 24, 24);
+    border: rgba(0, 0, 0, 0.548) 1px solid;
+    border-radius: 50%;
+    margin: 1px;
+  }
+  .walking{
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: rgba(129, 0, 133);
+    border: rgba(0, 0, 0, 0.548) 1px solid;
+    border-radius: 50%;
+    margin: 1px;
+  }
+  .vegan{
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: rgba(11, 133, 0);
+    border: rgba(0, 0, 0, 0.548) 1px solid;
+    border-radius: 50%;
+    margin: 1px;
+  }
+  .read{
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: rgba(0, 113, 133);
+    border: rgba(0, 0, 0, 0.548) 1px solid;
+    border-radius: 50%;
+    margin: 1px;
+  }
+}
+
+
+//MOBILE
+.banner-contentMobile {
+  text-align: center;
+
+  .blocPage-backgroundMobile {
+    background-image: linear-gradient( 109.7deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+    max-width: 100%;
+    height: 250px;
+    margin-top: 4.4em;
+    color: vars.$mainColor;
+  }
+
+  .banner-titleMobile {
+    padding-top: 1.5em;
+    font-family: vars.$mainFont;
+    font-size: 2em;
+  }
+
+  .banner-descriptionMobile {
+    font-family: vars.$secondFont;
+    padding: 20px;
+    font-size: 0.8em;
+  }
+
+  .citationquoteMobile {
+    position: relative;
+    bottom: 35px;
+    left: 100px;
+    font-size: 0.7em;
+  }
+}

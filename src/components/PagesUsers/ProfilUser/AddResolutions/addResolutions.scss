@@ -1,0 +1,44 @@
+@use '/src/styles/_vars.scss';
+
+.addResolutions-content {
+  text-align: center;
+  padding: 3em;
+  margin: 2em 3em;
+
+
+  .addResolutions-bouton {
+    display: flex;
+    justify-content: center;
+
+  }
+  .btn-grad-addresolution {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+  .btn-grad-addresolution {
+     font-family: vars.$secondFont;
+     margin-top: 0.8em;
+     margin-bottom: 2em;
+     text-transform: uppercase;
+     font-size: 3em;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     border-radius: 50%;
+     width: 100px;
+     height: 100px;
+     border: none;
+   }
+
+   .btn-grad-addresolution:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+
+   .addResolutions-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    font-family: vars.$mainFont;
+  }
+ 
+}

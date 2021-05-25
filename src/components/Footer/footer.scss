@@ -1,0 +1,41 @@
+@use '/src/styles/_vars.scss';
+
+.footer-content {
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  background-color: vars.$darkColor;
+  padding: 1.5em;
+  color: vars.$mainColor;
+  font-family: vars.$mainFont;
+  font-size: 0.6em;
+  z-index: 5;
+
+  .footer-nav {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 1em;
+  }
+
+  .footer-list {
+    display: inline;
+    margin-right: 1em;
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: vars.$mainColor;
+    font-weight: bolder;
+    padding: 1em;
+
+    &:hover {
+      text-decoration: none;
+      background-image: linear-gradient(#FF512F 0%, #F09819  51%, #FF512F  100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+
+}

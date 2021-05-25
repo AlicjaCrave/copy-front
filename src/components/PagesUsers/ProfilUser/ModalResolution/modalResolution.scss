@@ -1,0 +1,132 @@
+@use '/src/styles/_vars.scss';
+
+.resolutions-content {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  
+  .one-resolution {
+   width: 200px;
+   margin: 1em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .resolution-image {
+    border: 1px solid rgb(211, 211, 211);
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 2s;
+  }
+  .resolution-image:hover{
+    border: 1px solid rgb(211, 211, 211);
+    background-color: rgb(200, 200, 200);
+    transition: 0.5s;
+  }
+
+  .titleResolution {
+    font-family: vars.$secondFont;
+    font-size: 0.8em;
+    padding: 0.5em;
+    text-align: center;
+  }
+}
+// -------------------- Step 2 ------------------------------------------         
+
+.resolutions-content-step2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: flex-end;
+  flex-wrap: wrap;
+
+  .one-resolution-step2{
+    max-width: 200px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .resolution-image-step2 {
+    border: 1px solid rgb(211, 211, 211);
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    max-width: 220px;
+    object-fit: cover;
+    margin-right: 1em;
+
+  }
+
+  .titleResolution-step2 {
+    font-family: vars.$secondFont;
+    font-size: 0.8em;
+    padding: 0.5em;
+    text-align: center;
+  }
+  .choiceResolution{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  .testboutonretour {
+    position: absolute;
+    top: 200px;
+    }
+
+  }
+  .choiceResolutionButtons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  .choiceResolutionButton{
+     font-family: vars.$mainFont;
+     padding: 15px 15px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 0.8em;
+     transition: 0.5s;
+     background-size: 200% auto;          
+     border-radius: 10px;
+     display: block;
+     border: none;
+     cursor: pointer;
+     border: 1px solid rgb(211, 211, 211);
+     background-color: rgb(240, 240, 240);
+     border-radius: 10px;
+     transition: 2s;
+     margin-bottom: 10px;
+  }
+  .choiceResolutionButton:hover{
+    border: 1px solid rgb(211, 211, 211);
+    background-color: rgb(200, 200, 200);
+    transition: 0.5s;
+  }
+ 
+}
+
+.btn-grad-resolution {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+.btn-grad-resolution {
+   font-family: vars.$mainFont;
+   padding: 15px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 0.6em;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+   border: none;
+ }
+
+ .btn-grad-resolution:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

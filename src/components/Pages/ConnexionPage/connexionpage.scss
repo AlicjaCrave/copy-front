@@ -1,0 +1,69 @@
+@use '/src/styles/_vars.scss';
+
+.connexion-content {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  align-content: center;
+  margin-top: -1em;
+
+  form {
+    border: 1px solid rgba(51, 51, 51, 0.308);
+    padding: 2em;
+    width: 400px;
+  }
+
+  .titlePage {
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    font-family: vars.$secondFont;
+  }
+
+  .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+  .btn-grad {
+     font-family: vars.$mainFont;
+     padding: 15px 15px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 0.6em;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     border-radius: 10px;
+     border: none;
+
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+   .sendContent{
+     display: flex;
+     flex-direction: column-reverse;
+   }
+   .forgotten-psw {
+     font-size: 0.9em;
+
+     padding-top: 1em;
+   }
+   .wrongIdentification{
+    padding-bottom: 0.8em;
+     color: red;
+     font-size: 0.8em;
+   }
+
+   .goInscription {
+    color: vars.$darkColor;
+    
+  }
+  
+  .goInscription:hover {
+    text-decoration: none;
+    background-image: linear-gradient(#FF512F 0%, #F09819  51%, #FF512F  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

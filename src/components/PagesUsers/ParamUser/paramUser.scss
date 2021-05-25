@@ -1,0 +1,60 @@
+@use '/src/styles/_vars.scss';
+
+.paramsUser-content {
+  display: grid;
+  margin-top: 8em;
+  margin-bottom: 8em;
+  place-items: center;
+  align-content: center;
+
+  .paramsUser-infos {
+    font-style: italic;
+  }
+
+  .privateProfil {
+    margin: 0.5em;
+  }
+
+  form {
+    border: 1px solid rgba(51, 51, 51, 0.308);
+    padding: 2em;
+    width: 400px;
+  }
+
+  .titlePage {
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    font-family: vars.$secondFont;
+  }
+
+  .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+  .btn-grad {
+     font-family: vars.$mainFont;
+     padding: 15px 15px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 0.6em;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     border-radius: 10px;
+     display: block;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+
+   .forgotten-psw {
+     font-size: 0.9em;
+     float: right;
+     padding-top: 1em;
+   }
+
+   .errorpassword {
+     color: red;
+   }
+}

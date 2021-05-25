@@ -1,0 +1,76 @@
+@use '/src/styles/_vars.scss';
+
+.profilUser-content {
+  margin-bottom: 4em;
+}
+
+.titre-archives {
+  font-size: 5vmin;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: vars.$mainFont;
+}
+
+.retourprofil {
+  display: flex;
+  justify-content: center;
+  color: vars.$darkColor;
+  font-family: vars.$mainFont;
+  padding-bottom: 5em;
+}
+
+.retourprofil:hover {
+  text-decoration: none;
+  background-image: linear-gradient(#FF512F 0%, #F09819  51%, #FF512F  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.archives-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  margin-bottom: 5em;
+ 
+
+  .archives-content {
+    display: flex;
+  }
+
+  .archive-content {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    background-color: rgb(236, 236, 236);
+    padding: 2em;
+  }
+
+  .icon-resolution {
+    margin-left: 1em;
+    margin-right: 1em;
+  
+  }
+
+  .infos-resolution {
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    font-weight: bolder;
+    margin-top: 0.5em;
+  }
+
+  .infos-resolution-title {
+    font-family: vars.$secondFont;
+  }
+
+  .infos-resolution-date {
+    font-size: 0.75em;
+  }
+
+  .noresolution {
+    opacity: 0.7;
+  }
+
+}

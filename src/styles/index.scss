@@ -1,0 +1,45 @@
+@use 'reset';
+@use 'vars';
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: sans-serif;
+  max-width: 100%;
+}
+
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+  .btn-grad {
+     font-family: vars.$mainFont;
+     padding: 15px 15px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 0.6em;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     border-radius: 10px;
+     border: none;
+     float: right;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

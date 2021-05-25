@@ -1,0 +1,105 @@
+@use '/src/styles/_vars.scss';
+
+.aboutus {
+
+  .aboutus-content {
+    text-align: center;
+  }
+
+  .aboutus-background {
+    background-image: linear-gradient( 109.7deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+    max-height: 250px;
+    margin-top: 4.4em;
+    color: vars.$mainColor;
+  }
+
+  .titlePage{
+    padding-top: 2em;
+    font-family: vars.$mainFont;
+  }
+
+  .aboutus-description {
+    font-family: vars.$secondFont;
+    padding: 20px;
+  }
+
+  .team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    margin: auto;
+  }
+
+  .deuxteam {
+    border: 2px solid vars.$darkColor;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+  }
+
+  .nameteam {
+    font-family: vars.$mainFont;
+    font-size: 0.8em;
+  }
+
+    .cardTestimonie{
+      max-width: 200px;
+      height: 300px;
+      border: 1px solid rgb(226, 226, 226);
+      background-color: rgb(236, 236, 236);
+      border-radius: 4%;
+      padding: 2em;
+      margin: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    .pseudoTestimonie{
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .logoTestimonie{
+      border-radius: 50%;
+      background-image: linear-gradient( 10deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+      margin: 10px;
+      padding: 2px;
+      min-width: 10em;
+      max-width: 10em;
+      min-height: 10em;
+      max-height: 10em;
+
+    }
+
+    .teamtitle {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 25px;
+      left: 25px;
+      width: 325px;
+      text-align: center;
+      font-family: vars.$mainFont;
+      background-color: white;
+    }
+
+    .teamgroup {
+      margin-top: 2em;
+      margin-bottom: 5em;
+      text-align: center;
+    }
+
+  
+
+    
+
+  }
+
+

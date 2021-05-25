@@ -1,0 +1,47 @@
+@use '/src/styles/_vars.scss';
+
+.checkday {
+display: flex;
+justify-content: space-evenly;
+margin: 2em;
+}
+
+.validationDay{
+
+  display: inline-flex;
+  justify-content: space-evenly;
+
+  .buttonValidationDay {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+  .buttonValidationDay {
+   font-family: vars.$mainFont;
+   padding: 10px 10px;
+   text-align: center;
+   font-size: 0.6em;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   border: none;
+   float: right;
+   margin: 20px;
+ }
+
+ .buttonValidationDay:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .check {
+   border: none;
+   background: transparent;
+ }
+
+ .positive {
+  color: green;
+ }
+
+ .negative {
+  color: orange;
+ }
+}

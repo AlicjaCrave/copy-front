@@ -1,0 +1,50 @@
+@use '/src/styles/_vars.scss';
+
+.iconUser-content {
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+  max-height: 300px;
+
+  .iconUser-infos-content {
+    position: relative;
+    bottom: 150px;
+    margin-top: 1.5em;
+  }
+   
+  .iconUser-nickname {
+    font-size: 1.5em;
+    font-family: vars.$mainFont;
+  }
+
+  .iconUser-infos-pays {
+    font-style: italic;
+  }
+
+  .iconUser-infos-perso {
+    max-width: 100%;
+  }
+
+  .iconUser-inscription {
+    font-family: vars.$secondFont;
+    font-size: 0.9em;
+  }
+
+  .iconUser-image {
+    position: relative;
+    bottom:150px;
+    background-image: linear-gradient( 10deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+    max-width: 100%;
+    height: auto;
+    margin: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .iconUser-image:hover{
+
+    border: 4px solid vars.$secondColor;
+  }
+
+}

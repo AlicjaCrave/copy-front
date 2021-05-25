@@ -1,0 +1,13 @@
+@use '/src/styles/_vars.scss';
+
+.connexion-content{
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+  .retourconnexion {
+    font-family: vars.$mainFont;
+    color: vars.$darkColor;
+    font-size: 0.6em;
+    text-align: center;
+  }
+}

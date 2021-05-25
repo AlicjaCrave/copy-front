@@ -1,0 +1,120 @@
+@use '/src/styles/_vars.scss';
+
+.testimonies-content {
+  text-align: center;
+
+  .testimonies-background {
+    background-image: linear-gradient( 109.7deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+    height: 250px;
+    margin-top: 4.4em;
+    color: vars.$mainColor;
+  }
+
+  .testimonies-title {
+    padding-top: 2em;
+    font-family: vars.$mainFont;
+    
+    
+    }
+    .testimonies-subtitle {
+      font-family: vars.$secondFont;
+      padding: 20px;
+    }
+
+    .citationquote {
+      position: relative;
+      bottom: 35px;
+      left: 200px;
+      font-size: 0.7em;
+    }
+}
+
+
+.testimoniesBloc{
+
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+
+  .testimonies-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    .cardTestimonie{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 250px;
+      max-width: 250px;
+      max-height: 600px;
+      border: 1px solid rgb(226, 226, 226);
+      background-color: rgb(236, 236, 236);
+      border-radius: 4%;
+      padding: 15px;
+      margin: 3em;
+     
+  
+    }
+    .titleTestimonie{
+      font-family: vars.$secondFont;
+      font-size: 1em;
+    }
+    .pseudoTestimonie{
+      text-align: center;
+      font-weight: bold;
+    }
+    .logoTestimonie{
+      border-radius: 50%;
+      background-image: linear-gradient( 10deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+      margin: 10px;
+      padding: 2px;
+      min-width: 10em;
+      max-width: 10em;
+      min-height: 10em;
+      max-height: 10em;
+  
+    }
+
+    .content-testimony-user {
+      overflow-y: scroll;
+      text-align: justify;
+    }
+
+  }
+
+}
+
+//MOBILE
+.testimonies-contentMobile {
+  text-align: center;
+
+  .testimonies-backgroundMobile {
+    background-image: linear-gradient( 109.7deg,  rgba(202,50,50,1) 5.7%, rgba(252,195,12,1) 92.4% );
+    max-width: 100%;
+    height: 250px;
+    margin-top: 4.4em;
+    color: vars.$mainColor;
+  }
+
+  .testimonies-titleMobile {
+    padding-top: 2em;
+    font-family: vars.$mainFont;
+    font-size: 2em;
+  }
+
+  .testimonies-subtitleMobile {
+    font-family: vars.$secondFont;
+    padding: 20px;
+    font-size: 0.8em;
+  }
+
+  .citationquoteMobile {
+    position: relative;
+    bottom: 35px;
+    left: 100px;
+    font-size: 0.7em;
+  }
+}

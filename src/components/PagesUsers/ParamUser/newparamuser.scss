@@ -1,0 +1,19 @@
+@use '/src/styles/_vars.scss';
+.formBlock{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  .field-form{
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .form-control{
+  }
+  .errorsMessages{
+    color: red;
+  }
+  .confirmation{
+    color: green;
+  }
+}
